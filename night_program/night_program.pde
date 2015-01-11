@@ -1,8 +1,3 @@
-import ddf.minim.*;
-
-Minim minim;
-AudioPlayer message;
-
 int marker = -1;
 int durration;
 float pad = 20;
@@ -19,21 +14,22 @@ void setup(){
   
   minim = new Minim(this);
   
-  time[0] = 0; words[0] = "Wake up and\nget to kitchen";
-  time[1] = 5; words[1] = "Drink breakfast/coffee";
-  time[2] = 10; words[2] = "Brush teeth ready";
-  time[3] = 12; words[3] = "Brush teeth start";
-  time[4] = 15; words[4] = "Brush teeth end";
-  time[5] = 16; words[5] = "Take coconut oil and\nget to the shower";
-  time[6] = 19; words[6] = "Start and enter\nthe shower";
-  time[7] = 21; words[7] = "Use the amber\nbar soap";
-  time[8] = 23; words[8] = "Rinse off";
-  time[9] = 25; words[9] = "Turn the water\noff and dry";
-  time[10] = 28; words[10] = "Take coconut oil\ncontainer down\nto kitchen";
-  time[11] = 35; words[11] = "Get dressed and\napply deodorant";
-  time[12] = 40; words[12] = "Mess with face";
-  time[13] = 46; words[13] = "Mess with hair";
-  time[14] = 53; words[14] = "get: folders, laptop,\ncharger, phone, lunch,\ndrink, else"; 
+  time[0] = 0; words[0] = "Get to the shower";
+  time[1] = 2; words[1] = "Start and enter\nthe shower";
+  time[2] = 5; words[2] = "Use the amber\nbar soap";
+  time[3] = 7; words[3] = "Use the lime\nliquid soap";
+  time[4] = 9; words[4] = "Use the white\nliquid soap";
+  time[5] = 11; words[5] = "Use the blue\nbar soap";
+  time[6] = 15; words[6] = "Rinse off";
+  time[7] = 18; words[7] = "Turn the water\noff and dry";
+  time[8] = 21; words[8] = "Get downstairs";
+  time[9] = 23; words[9] = "Mess with face";
+  time[10] = 25; words[10] = "Brush teeth ready";
+  time[11] = 26; words[11] = "Brush teeth start";
+  time[12] = 29; words[12] = "Brush teeth end";
+  time[13] = 30; words[13] = "Mess with face v2";
+  time[14] = 32; words[14] = "Apply deodorant";
+  time[14] = 33; words[14] = "Turn off lights, put me on charge, and get in bed"; 
   
   durration = floor(time[times-1]+1);
   
@@ -72,9 +68,9 @@ void draw(){
   
   if(repeat == 10 || repeat == 5 || repeat == 0){
     //message = minim.loadFile("http://interactivecomputing2013.globalblogs.org/files/2013/10/boing.mp3");//change+".mp3");
-    message = minim.loadFile("http://radiotech.github.io/Morning/morning_program/data/"+change+".mp3");
+    //message = minim.loadFile("http://radiotech.github.io/Morning/morning_program/data/"+change+".mp3");
     
-    message.play();
+    //message.play();
   }
   if(repeat > -1){
     repeat-=1;
