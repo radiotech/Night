@@ -29,7 +29,7 @@ void setup(){
   time[12] = 29; words[12] = "Brush teeth end";
   time[13] = 30; words[13] = "Mess with face v2";
   time[14] = 32; words[14] = "Apply deodorant";
-  time[14] = 33; words[14] = "Turn off lights, put me on charge, and get in bed"; 
+  time[14] = 33; words[14] = "Turn off lights,\nput me on charge,\nand get in bed"; 
   
   durration = floor(time[times-1]+1);
   
